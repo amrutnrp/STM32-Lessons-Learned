@@ -1,0 +1,13 @@
+I removed the STLink while it was uploading the code
+SO, maybe some data partition got corrupted
+and I could not download the flash any longer
+It was giving the following error
+
+two pop ups, and at the end this at cmdline.
+Internal command error Error: Flash Download failed - Target DLL has been cancelled
+
+Solution-  make Boot0 high and upload once
+make boot0 low
+now the uploading should resume as before
+
+

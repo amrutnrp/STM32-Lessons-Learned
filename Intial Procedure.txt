@@ -1,0 +1,45 @@
+1. Open STM32CubeMX IDE
+
+
+Install or remove emb
+Choose STM32F1 
+expand
+select the latest version
+click install now
+Close
+
+Click on MCU selector
+3. STM32F103C8T6
+
+
+Left Click on pin 
+Click GPIO Output
+Right Click on same pin
+Enter Signal label -> 
+
+
+
+4. Project Manager-> Project
+5. Give a name and location
+6. ToolChain IDe= MDK-ARM
+
+7. Code Generator -> Copy only the necessary files
+8. "Generate Code"
+
+OPen project- in Keil
+it will install necessary file- > especially for F103C8T6
+
+open main.c
+
+go to while loop
+
+put your code
+
+Go to project -> Options for main.c
+Goto Debug Tab-> Use -> ST Link Debugger
+Click Settings (side by )-> Turn on Reset and RUN
+ok-> ok
+
+
+Build
+
