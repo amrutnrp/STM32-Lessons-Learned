@@ -1,0 +1,14 @@
+after enabling USB on STM32,
+I immedialtely get error in CLK tab
+" incorrect CLK configuration"
+
+thats because USB needs an accurate CLK and can't be run by RC clk
+Also, even if you try resolve CLK issues, it won't solve anything.
+
+Solution- Go to System Core
+Select RCC
+In high speed CLK, PUT EXTERNAL CRYSTAL/ RESONATOR
+
+
+then go to LCK tab, try "resolve issues".
+It should solve any conflicts/ errors.
